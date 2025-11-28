@@ -418,6 +418,10 @@ case 'payment':
               value={data.company}
               onChangeText={(text) => updateFormData('company', text)}
             />
+                 <Text style={styles.mobileNote}>
+                  <Ionicons name='bulb' size={18} color='#F59E0B'/> For Dynamic Qr Code Which Track Scan Logs(who scanned your qr code, their actual location and device in real time).One qr code change informations the most you can. 
+                  Please visit https://nexatheiconn.netlify.app.
+                </Text>
           </View>
         );
 
@@ -763,6 +767,15 @@ const styles = StyleSheet.create({
     borderColor: '#D1D5DB',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+    mobileNote: {
+    marginTop: 16,
+    padding: 12,
+    backgroundColor: '#FEF3C7',
+    borderRadius: 8,
+    fontSize: 14,
+    color: '#92400E',
+    textAlign: 'center',
   },
   radioInner: {
     width: 10,
